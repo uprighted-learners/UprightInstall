@@ -51,5 +51,5 @@ Alternatively, you can run the installer script directly in the terminal:
    - Will avoid re-installing packages after initial execution
    - Version numbers will display at the end on every execution and for successful installations 
 <div style="text-align: center;">
-    <img src="https://i.ibb.co/fF2NTgn/best.png" alt="Image of result" style="width: 20%; height:100%"/>
+    <img src="https://i.ibb.co/fF2NTgn/nocut.png" alt="Image of result" style="width: 20%; height:100%"/>
 </div>
