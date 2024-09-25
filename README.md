@@ -7,7 +7,7 @@ The Upright Installer is a convenient tool for setting up your development envir
 - **Node.js**
 - **Visual Studio Code**
 - **Postman**
-- **Git SSH Key Generation**
+- **Git SSH Key Generation (copied to clipboard)**
 
 ## Installation Instructions
 
