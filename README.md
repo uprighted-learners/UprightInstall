@@ -3,8 +3,8 @@
 The Upright Installer is a convenient tool for setting up your development environment on macOS. It will install the following software:
 
 - **Git**
-- **MongoDB Shell (mongosh) and Compass**
-- **Node.js**
+- **MongoDB (mongosh + MongoDB Compass)**
+- **Nodejs**
 - **Visual Studio Code**
 - **Postman**
 - **SSH Key Generation for GitHub (copied to clipboard)**
