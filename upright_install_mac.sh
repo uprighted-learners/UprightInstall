@@ -38,11 +38,9 @@ install_node() {
             exit 1
         fi
 
-        echo "Installing n and Node.js..."
-        #brew install node@22 !Goes really slow
-        #sudo n latest
+        echo "Installing Node..."
     else
-        echo "Node.js is already installed."
+        echo "Node is already installed."
     fi
 }
 
@@ -145,13 +143,11 @@ log_versions() {
     check_postman_version
     echo "MongoSH: $(mongosh --version)"
     check_compass_version
-    #echo "START DB SERVER WITH: brew services start mongodb/brew/mongodb-community"
 }
 
 echo "----------------------"
 echo "Running Installer..."
 echo "----------------------"
-# Main script execution
 install_homebrew
 install_git
 install_node
