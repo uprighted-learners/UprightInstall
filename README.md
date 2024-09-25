@@ -1,4 +1,4 @@
-# Upright Installer
+# Upright Education SoftwareDev Installer
 
 ✅ Intel 
 
