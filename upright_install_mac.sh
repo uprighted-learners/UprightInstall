@@ -142,10 +142,10 @@ log_versions() {
     echo "----------------------"
     color_green "Current Installed Versions:"
     echo "----------------------"
-    echo "VSCODE:" $(color_green $(code --version | head -n 1))
-    echo "GIT:" $(color_green $(git --version | head -n 1 | awk '{print $3}'))
-    echo "NODE:" $(color_green $(node --version))
-    echo "NPM:" $(color_green $(npm --version))
+    echo  "VSCODE:"  $(color_green $(code --version | head -n 1))
+    echo  "GIT:" $(color_green $(git --version | head -n 1 | awk '{print $3}'))
+    echo "NODE:" $(color_green  $(node --version))
+    echo  "NPM:" $(color_green  $(npm --version))
     check_postman_version
     echo "MongoSH:" $(color_green $(mongosh --version))
     check_compass_version
