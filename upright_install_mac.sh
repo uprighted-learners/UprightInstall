@@ -1,7 +1,7 @@
 #!/bin/bash
 HOMEBREW_NO_ENV_HINTS=1
 
-# Function to install Homebrew
+#? Install Homebrew
 install_homebrew() {
     if ! command -v brew &>/dev/null; then
         echo "Installing Homebrew..."
@@ -11,7 +11,7 @@ install_homebrew() {
     fi
 }
 
-# Function to install Node.js
+#? Install Node.js
 install_node() {
     if ! command -v node &>/dev/null; then
 
@@ -44,7 +44,7 @@ install_node() {
     fi
 }
 
-# Function to install Git
+#? Install Git
 install_git() {
     if ! command -v git &>/dev/null; then
         echo "Installing Git..."
@@ -54,7 +54,7 @@ install_git() {
     fi
 }
 
-# Function to install Visual Studio Code
+#? Install Visual Studio Code
 install_vscode() {
     if ! command -v code &>/dev/null; then
         echo "Installing Visual Studio Code..."
@@ -63,7 +63,8 @@ install_vscode() {
         echo "VSCode is already installed."
     fi
 }
-# Function to Mongodb & compass
+
+#? Install Mongodb & compass
 install_mongodb_compass() {
     if ! command -v mongosh &>/dev/null; then
         echo "Installing MongoDB + Compass ..."
@@ -80,7 +81,7 @@ install_mongodb_compass() {
     fi
 }
 
-# Function to install Postman
+#? Install Postman
 install_postman() {
     if [ -d "/Applications/Postman.app" ]; then
         echo "Postman is already installed."
@@ -90,6 +91,7 @@ install_postman() {
     fi
 }
 
+#? Check Postman Ver.
 check_postman_version() {
     if [ -d "/Applications/Postman.app" ]; then
         version=$(/usr/bin/defaults read /Applications/Postman.app/Contents/Info.plist CFBundleShortVersionString)
@@ -98,7 +100,7 @@ check_postman_version() {
         echo "Postman is not installed."
     fi
 }
-
+#? Check Compass Ver.
 check_compass_version() {
     if [ -d "/Applications/MongoDB Compass.app" ]; then
         version=$(/usr/bin/defaults read "/Applications/MongoDB Compass.app/Contents/Info.plist" CFBundleShortVersionString)
@@ -108,7 +110,7 @@ check_compass_version() {
     fi
 }
 
-# Function to set up Git SSH key
+#? Set up Git SSH key
 setup_git_ssh() {
 
     # Path to the known_hosts file
@@ -130,7 +132,7 @@ setup_git_ssh() {
     fi
 }
 
-# Function to log installed versions
+#? Log installed versions
 log_versions() {
     echo "----------------------"
     echo "Current Installed Versions:"
