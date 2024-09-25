@@ -1,6 +1,6 @@
 # Upright Education SoftwareDev Installer (macOS)
  
-✅ Intel 
+✅ Intel ( Tested on macOS Monterey v.12 )
 
 ⚠️ Apple Silicon (Testing, will be available soon)
 
@@ -11,7 +11,6 @@ The Upright Installer is a convenient tool for setting up your development envir
 - **Nodejs**
 - **Visual Studio Code**
 - **Postman**
-
 
 ## Installation Instructions
 
@@ -52,6 +51,7 @@ Alternatively, you can run the installer script directly in the terminal:
 ### Step 3: Complete 
    - Will avoid re-installing packages after initial execution
    - Version numbers will display at the end on every execution and for successful installations 
+   
 <div style="text-align: center;">
     <img src="https://i.ibb.co/fF2NTgn/nocut.png" alt="Image of result" style="width: 20%; min-width:300px; height:100%"/>
 </div>
