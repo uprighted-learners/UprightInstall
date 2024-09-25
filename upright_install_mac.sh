@@ -3,7 +3,7 @@ HOMEBREW_NO_ENV_HINTS=1
 
 color_green() {
     local text=$1
-    echo -e "\033[1;32m $text\033[0m"
+    echo -e "\033[1;32m$text\033[0m"
 }
 
 #? Install Homebrew
@@ -12,7 +12,7 @@ install_homebrew() {
         echo "Installing Homebrew..."
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     else
-        echo "Homebrew is already installed."
+        echo "Homebrew is already" $(color_green "installed")"."
     fi
 }
 
@@ -42,7 +42,7 @@ install_node() {
         fi
 
     else
-        echo "Node is already installed."
+        echo "Node is already" $(color_green "installed")"."
     fi
 }
 
@@ -52,7 +52,7 @@ install_git() {
         echo "Installing Git..."
         brew install git >/dev/null
     else
-        echo "Git is already installed."
+        echo "Git is already" $(color_green "installed")"."
     fi
 }
 
@@ -62,7 +62,7 @@ install_vscode() {
         echo "Installing Visual Studio Code..."
         brew install --cask visual-studio-code >/dev/null
     else
-        echo "VSCode is already installed."
+        echo "VSCode is already" $(color_green "installed")"."
     fi
 }
 
@@ -79,14 +79,14 @@ install_mongodb_compass() {
         sudo mkdir -p /usr/local/opt/node/bin
         sudo ln -s $(which node) /usr/local/opt/node/bin/node
     else
-        echo "MongoDB is already installed."
+        echo "MongoDB is already" $(color_green "installed")"."
     fi
 }
 
 #? Install Postman
 install_postman() {
     if [ -d "/Applications/Postman.app" ]; then
-        echo "Postman is already installed."
+        echo "Postman is already" $(color_green "installed")"."
     else
         echo "Installing Postman..."
         brew install --cask postman >/dev/null
