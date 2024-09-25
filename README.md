@@ -1,5 +1,7 @@
 # Upright Education SoftwareDev Installer (macOS)
 
+
+
 ✅ Intel 
 
 ⚠️ Apple Silicon (will be able to test this soon)
