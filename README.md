@@ -1,5 +1,5 @@
 # Upright Installer
-![My Image](https://i.ibb.co/dLtMJss/Screenshot-2024-09-25-123929.png)
+
 The Upright Installer is a convenient tool for setting up your development environment on macOS. It will install the following software:
 
 - **Git**
