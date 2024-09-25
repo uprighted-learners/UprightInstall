@@ -1,4 +1,3 @@
-
 # Upright Installer
 
 The Upright Installer is a convenient tool for setting up your development environment on macOS. It will install the following software:
@@ -18,4 +17,33 @@ First, clone the repository into your `Downloads` folder. Open your terminal and
 
 ```bash
 cd ~/Downloads
-git clone https://your-repo-url.git
+git clone https://github.com/uprighted-learners/UprightInstall.git
+```
+
+### Step 2: Run the Installer
+
+You have two options to run the installer:
+
+#### Option 1: Double-Click the Automator File
+
+1. Navigate to the cloned directory:
+   ```bash
+   cd ~/Downloads/UprightInstall
+   ```
+2. Find the `UprightInstaller` file and double-click it to run.
+
+#### Option 2: Run the Script via Terminal
+
+Alternatively, you can run the installer script directly in the terminal:
+
+1. Open your terminal.
+2. Navigate to the cloned directory:
+   ```bash
+   cd ~/Downloads/your-repo-folder
+   ```
+3. Run the installer script:
+   ```bash
+   ./upright_install_mac.sh
+   ```
+
+
