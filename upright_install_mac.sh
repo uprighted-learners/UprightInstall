@@ -24,7 +24,6 @@ install_node() {
         url="https://nodejs.org/dist/latest/"
 
         # Step 1: Fetch the directory listing using curl
-        echo "Fetching directory listing from $url"
         content=$(curl -s "$url")
 
         # Step 2: Use grep to find the .pkg file and awk to extract the filename
@@ -32,18 +31,16 @@ install_node() {
 
         # Step 3: Verify the filename
         if [ -n "$pkg_filename" ]; then
-            echo "Found .pkg file: $pkg_filename"
             download_url="${url}${pkg_filename}"
+            echo "Downloading Node Installer"
             curl -o ./Downloads/node-current.pkg $download_url
-            echo "Downloaded Node Installer"
+            echo "Installing Node..."
             sudo installer -pkg ./Downloads/node-current.pkg -target /
         else
-
             echo "No .pkg file found."
             exit 1
         fi
 
-        echo "Installing Node..."
     else
         echo "Node is already installed."
     fi
