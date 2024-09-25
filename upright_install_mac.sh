@@ -134,7 +134,7 @@ setup_git_ssh() {
 # Function to log installed versions
 log_versions() {
     echo "----------------------"
-    echo "Current Installed Versions"
+    echo "Current Installed Versions:"
     echo "----------------------"
     echo "VSCODE: $(code --version | head -n 1)"
     echo "GIT: $(git --version | head -n 1)"
