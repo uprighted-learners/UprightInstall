@@ -70,7 +70,7 @@ install_mongodb_compass() {
         brew tap mongodb/brew >/dev/null
         brew install --ignore-dependencies mongodb/brew/mongosh
         brew install --ignore-dependencies mongodb/brew/mongodb-community
-        brew install --cask mongodb-compassF
+        brew install --cask mongodb-compass
         echo "Starting mongodb server"
         brew services start mongodb/brew/mongodb-community
         sudo mkdir -p /usr/local/opt/node/bin
