@@ -39,7 +39,7 @@ Alternatively, you can run the installer script directly in the terminal:
 1. Open your terminal.
 2. Navigate to the cloned directory:
    ```bash
-   cd ~/Downloads/your-repo-folder
+   cd ~/Downloads/UprightInstall
    ```
 3. Run the installer script:
    ```bash
