@@ -26,10 +26,7 @@ You have two options to run the installer:
 
 #### Option 1: Double-Click the Automator File
 
-1. Navigate to the cloned directory:
-   ```bash
-   cd ~/Downloads/UprightInstall
-   ```
+1. Navigate to the cloned directory found within your `Downloads` folder
 2. Find the `UprightInstaller` file and double-click it to run.
 
 #### Option 2: Run the Script via Terminal
