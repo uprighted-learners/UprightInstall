@@ -1,4 +1,4 @@
-# Upright Education SoftwareDev Installer
+# Upright Education SoftwareDev Installer (macOS)
 
 ✅ Intel 
 
