@@ -161,5 +161,5 @@ setup_git_ssh
 log_versions
 
 echo "----------------------"
-color_green "Installation complete!"
+color_green "Installation Complete!"
 echo "----------------------"
