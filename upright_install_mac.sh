@@ -1,6 +1,11 @@
 #!/bin/bash
 HOMEBREW_NO_ENV_HINTS=1
 
+color_green() {
+    local text=$1
+    echo -e "\033[1;32m $text\033[0m"
+}
+
 #? Install Homebrew
 install_homebrew() {
     if ! command -v brew &>/dev/null; then
@@ -95,7 +100,7 @@ install_postman() {
 check_postman_version() {
     if [ -d "/Applications/Postman.app" ]; then
         version=$(/usr/bin/defaults read /Applications/Postman.app/Contents/Info.plist CFBundleShortVersionString)
-        echo "Postman: $version"
+        echo -e "Postman:" $(color_green $version)
     else
         echo "Postman is not installed."
     fi
@@ -104,7 +109,7 @@ check_postman_version() {
 check_compass_version() {
     if [ -d "/Applications/MongoDB Compass.app" ]; then
         version=$(/usr/bin/defaults read "/Applications/MongoDB Compass.app/Contents/Info.plist" CFBundleShortVersionString)
-        echo "MongoDB Compass: $version"
+        echo -e "MongoDB Compass:" $(color_green $version)
     else
         echo "MongoDB Compass is not installed."
     fi
@@ -135,19 +140,19 @@ setup_git_ssh() {
 #? Log installed versions
 log_versions() {
     echo "----------------------"
-    echo "Current Installed Versions:"
+    color_green "Current Installed Versions:"
     echo "----------------------"
-    echo "VSCODE: $(code --version | head -n 1)"
-    echo "GIT: $(git --version | head -n 1)"
-    echo "NODE: $(node --version)"
-    echo "NPM: $(npm --version)"
+    echo "VSCODE:" $(color_green $(code --version | head -n 1))
+    echo "GIT:" $(color_green $(git --version | head -n 1 | awk '{print $3}'))
+    echo "NODE:" $(color_green $(node --version))
+    echo "NPM:" $(color_green $(npm --version))
     check_postman_version
-    echo "MongoSH: $(mongosh --version)"
+    echo "MongoSH:" $(color_green $(mongosh --version))
     check_compass_version
 }
 
 echo "----------------------"
-echo "Running Installer..."
+color_green "Running Installer..."
 echo "----------------------"
 install_homebrew
 install_git
@@ -159,5 +164,5 @@ setup_git_ssh
 log_versions
 
 echo "----------------------"
-echo "Installation complete!"
+color_green "Installation complete!"
 echo "----------------------"
