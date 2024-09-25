@@ -120,7 +120,6 @@ setup_git_ssh() {
     else
         echo "The known_hosts file does NOT contain an entry for github.com."
         echo "Creating SSH key..."
-        # ssh-keygen -t rsa -b 4096 -C "$git_email"
         ssh-keygen -t rsa -b 4096 -C
         eval "$(ssh-agent -s)"
         ssh-add -K ~/.ssh/id_rsa
@@ -157,5 +156,6 @@ install_mongodb_compass
 setup_git_ssh
 log_versions
 
-echo ""
+echo "----------------------"
 echo "Installation complete!"
+echo "----------------------"
