@@ -139,7 +139,7 @@ log_versions() {
     echo "----------------------"
     color_green "Current Installed Versions:"
     echo "----------------------"
-    echo "VsCode:" $(color_green $(code --version | head -n 1))
+    echo "VSCode:" $(color_green $(code --version | head -n 1))
     echo "Git:" $(color_green $(git --version | head -n 1 | awk '{print $3}'))
     echo "Node:" $(color_green $(node --version))
     echo "Npm:" $(color_green $(npm --version))
