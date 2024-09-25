@@ -141,7 +141,7 @@ log_versions() {
     echo "----------------------"
     echo "VSCode:" $(color_green $(code --version | head -n 1))
     echo "Git:" $(color_green $(git --version | head -n 1 | awk '{print $3}'))
-    echo "Node:" $(color_green $(node --version))
+    echo "Node:" $(color_green $(node --version)
     echo "Npm:" $(color_green $(npm --version))
     check_postman_version
     echo "MongoSH:" $(color_green $(mongosh --version))
