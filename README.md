@@ -1,5 +1,9 @@
 # Upright Installer
 
+✅ Intel 
+
+⚠️ Apple Silicon (will be able to test this soon)
+
 The Upright Installer is a convenient tool for setting up your development environment on macOS. It will install the following software:
 
 - **Git**
