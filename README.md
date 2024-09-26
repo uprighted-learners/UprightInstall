@@ -1,6 +1,8 @@
 # Upright Education SoftwareDev Installer (macOS)
  
  --❗still a work in progress -- don't use it.
+
+ -- Testing still needed on fresh install
  
 ✅ Intel ( Tested on macOS Monterey v.12 )
 
@@ -25,30 +27,18 @@ cd ~/Downloads
 git clone https://github.com/uprighted-learners/UprightInstall.git
 ```
 
-### Step 2: Run the Installer
+### Step 2: Set Permissions for the Installer 
 
-You have two options to run the installer:
+```bash
+chmod +x ./UprightInstall/UprightInstaller.app
+```
 
-#### Option 1: Double-Click the Installation File
+#### Step 3: Double-Click the Installation File
 
 1. Navigate to the cloned directory found within your `Downloads` folder
 2. Find the `UprightInstaller` file and double-click it to run.
 
-#### Option 2: Run the Script via Terminal
-
-Alternatively, you can run the installer script directly in the terminal:
-
-1. Open your terminal.
-2. Navigate to the cloned directory:
-   ```bash
-   cd ~/Downloads/UprightInstall
-   ```
-3. Run the installer script:
-   ```bash
-   ./upright_install_mac.sh
-   ```
-
-🔑 You will be prompted for your password to grant sudo privileges for 📦 package installations. Please input it to continue.
+🔑 You may be prompted for your password to grant sudo privileges for 📦 package installations and to run the installer. Please input it to continue.
 
 ### Step 3: Complete 
    - Will avoid re-installing packages after initial execution

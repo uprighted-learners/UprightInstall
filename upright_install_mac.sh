@@ -36,6 +36,7 @@ install_node() {
             curl -o ./Downloads/node-current.pkg $download_url
             echo "Installing Node..."
             sudo installer -pkg ./Downloads/node-current.pkg -target /
+            rm -rf ./Downloads/node-current.pkg
         else
             echo "No .pkg file found."
             exit 1
