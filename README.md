@@ -1,6 +1,7 @@
 # Upright Education SoftwareDev Installer (macOS)
  
  --❗still a work in progress -- don't use it.
+ 
 ✅ Intel ( Tested on macOS Monterey v.12 )
 
 ⚠️ Apple Silicon (Testing, will be available soon)
