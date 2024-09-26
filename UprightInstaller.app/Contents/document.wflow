@@ -61,13 +61,20 @@
 					<key>COMMAND_STRING</key>
 					<string>#!/bin/bash
 echo "test"
-# Get the directory where Automator app is located
-script_dir="$(dirname "$(readlink "$0" || echo "$0")")"
+
+# Get the directory where the Automator app is located
+script_dir="$(dirname "$0")"
 
 # Ensure Automator app finds and executes the script
 full_path="$script_dir/Downloads/UprightInstall/upright_install_mac.sh"
 
-  osascript -e 'tell application "Terminal" to do script "'"$full_path"'"'
+# Fix missing "$" in variable reference
+chmod +x "$full_path"
+sudo chown $USER "$full_path"
+
+# Open Terminal and run the script
+osascript -e 'tell application "Terminal" to do script "'"$full_path"'"'
+
 </string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
@@ -181,7 +188,7 @@ full_path="$script_dir/Downloads/UprightInstall/upright_install_mac.sh"
 				<key>isViewVisible</key>
 				<integer>1</integer>
 				<key>location</key>
-				<string>449.000000:545.000000</string>
+				<string>449.000000:385.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
